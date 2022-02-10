@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 # <kbd>module</kbd> `lazydocs.generation`
 Main module for markdown generation. 
@@ -8,7 +8,7 @@ Main module for markdown generation.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L197"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L197"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `to_md_file`
 
@@ -37,7 +37,7 @@ Creates an API docs file from a provided text.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L889"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L890"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `generate_docs`
 
@@ -51,7 +51,8 @@ generate_docs(
     ignored_modules: Optional[List[str]] = None,
     overview_file: Optional[str] = None,
     watermark: bool = True,
-    validate: bool = False
+    validate: bool = False,
+    include_under: bool = False
 ) → None
 ```
 
@@ -74,12 +75,12 @@ Generates markdown documentation for provided paths based on Google-style docstr
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L454"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L455"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class</kbd> `MarkdownGenerator`
 Markdown generator class. 
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L457"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L458"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `__init__`
 
@@ -106,7 +107,7 @@ Initializes the markdown API generator.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L609"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L610"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `class2md`
 
@@ -131,7 +132,7 @@ Takes a class and creates markdown text to document its methods and variables.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L524"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L525"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `func2md`
 
@@ -157,7 +158,7 @@ Takes a function (or method) and generates markdown docs.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L815"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L816"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `import2md`
 
@@ -182,7 +183,7 @@ Generates markdown documentation for a selected object/import.
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L720"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L721"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `module2md`
 
@@ -207,7 +208,7 @@ Takes an imported module object and create a Markdown string containing function
 
 ---
 
-<a href="https://github.com/ml-tooling/lazydocs/blob/main/src/lazydocs/generation.py#L835"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/lazydocs/generation.py#L836"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `overview2md`
 

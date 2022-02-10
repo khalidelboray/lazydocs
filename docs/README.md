@@ -4,6 +4,7 @@
 
 ## Modules
 
+- [`lazydocs`](./lazydocs.md#module-lazydocs)
 - [`lazydocs.generation`](./lazydocs.generation.md#module-lazydocsgeneration): Main module for markdown generation.
 
 ## Classes

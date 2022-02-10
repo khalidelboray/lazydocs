@@ -288,12 +288,12 @@ def _is_object_ignored(obj: Any) -> bool:
     return False
 
 
-def _is_module_ignored(module_name: str, ignored_modules: List[str]) -> bool:
+def _is_module_ignored(module_name: str, ignored_modules: List[str],include_under: bool = False) -> bool:
     """Checks if a given module is ignored."""
-#     Ignore this for now
-#     if module_name.split(".")[-1].startswith("_"):
-#         return True
-
+    # Check if package starts with only one '_'
+    if module_name.split('.')[-1].startswith("_") and module_name[1] != "_" and not include_under:
+        return True
+    
     for ignored_module in ignored_modules:
         if module_name == ignored_module:
             return True
@@ -897,6 +897,7 @@ def generate_docs(
     overview_file: Optional[str] = None,
     watermark: bool = True,
     validate: bool = False,
+    include_under: bool = False, 
 ) -> None:
     """Generates markdown documentation for provided paths based on Google-style docstrings.
 
@@ -960,7 +961,7 @@ def generate_docs(
 
             # Generate one file for every discovered module
             for loader, module_name, _ in pkgutil.walk_packages([path]):
-                if _is_module_ignored(module_name, ignored_modules):
+                if _is_module_ignored(module_name, ignored_modules,include_under):
                     # Add module to ignore list, so submodule will also be ignored
                     ignored_modules.append(module_name)
                     continue
